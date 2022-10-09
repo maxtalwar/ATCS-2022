@@ -1,0 +1,19 @@
+.center {
+    position: absolute;
+    left: 900px;
+    top: 200px;
+}
+
+.photo {
+    position: relative;
+    right: 550px;
+    top: -275px;
+}
+
+.description {
+    width: 350px;
+}
+
+.links {
+    color: black;
+}
