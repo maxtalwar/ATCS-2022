@@ -16,6 +16,18 @@ a {
     color: black;
 }
 
+hr {
+    position: relative;
+    right: 70px;
+    width: 50%;
+}
+
+.card-deck {
+    position:relative;
+    left:190px;
+    width: 1500px;
+}
+
 /* styles for links on the top of the page */
 .top {
     position: absolute;
@@ -38,19 +50,24 @@ a {
     left: 1200px;
 }
 
+.navbar_top {
+    position: absolute;
+    top: 10px;
+}
+
 
 /* page specific styles */
 .photo1 { /* for Hero Page */
     position: relative;
     right: 200px;
-    top: -200px;
+    top: -90px;
     height: 600px;
 }
 
 .photo2 { /* for About Me page */
     position: relative;
     right: 300px;
-    top: -440px;
+    top: -550px;
     height: 550px;
 }
 
@@ -58,21 +75,47 @@ a {
     width: 350px;
 }
 
-.contact-title {
+.contact-title { /* for contact page */
     position: relative;
     top: 250px;
 }
 
 .contact-info {
     position: relative;
-    left: 150px;
+    left: 200px;
     top: 150px;
 }
 
-.experience {
+.experience { /* for experience page */
     position: relative;
-    top: 60px;
-    left: 600px;
+    top:0px;
+    left: 200px;
+}
+
+.carousel {
+    width: 375px;
+}
+
+p.animate {
+    color: black; 
+    font-family: "arial";
+    font-size: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: animtext 4s steps(80, end); 
+    transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+@keyframes animtext { 
+    from {
+        width: 0;
+       transition: all 2s ease-in-out;
+    } 
+}
+
+li.bg-light {
+    display:inline-block;
 }
 
 
