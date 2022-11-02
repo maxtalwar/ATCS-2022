@@ -23,9 +23,11 @@ hr {
 }
 
 .card-deck {
-    position:relative;
-    left:190px;
-    width: 1500px;
+    /*position:relative;
+    left:190px;*/
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 /* styles for links on the top of the page */
@@ -84,12 +86,17 @@ hr {
     position: relative;
     left: 200px;
     top: 150px;
+    height: 170px;
+    border-left-style: dashed;
+    border-spacing: 100px;
+    padding-left: 50px;
 }
 
 .experience { /* for experience page */
     position: relative;
     top:0px;
-    left: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel {
