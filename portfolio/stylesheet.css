@@ -2,9 +2,14 @@
 
 /* general purpose styles */
 .center {
-    position: absolute;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 39%;
+
+    /*
     left: 700px;
     top: 200px;
+    */
 }
 
 .next_to_photo {
@@ -12,45 +17,55 @@
     left: 200px;
 }
 
-a {
-    color: black;
+hr {
+    position: relative;
+    right: 400px;
+    width: 20%;
 }
-
-/* styles for links on the top of the page */
-.top {
-    position: absolute;
-    top: 20px;
-}
-
-.link1 {
-    position: absolute;
-    left: 400px;
-}
-
-.link2 {
-    position: absolute;
-    left: 800px;
-    width: 100px;
-}
-
-.link3 {
-    position: absolute;
-    left: 1200px;
-}
-
 
 /* page specific styles */
-.photo1 { /* for Hero Page */
+
+/* Hero Page */
+.photo1 { 
     position: relative;
     right: 200px;
-    top: -200px;
+    top: -90px;
     height: 600px;
 }
 
-.photo2 { /* for About Me page */
+.homepage_title {
+    position: relative;
+    top:220px;
+}
+
+.carousel {
+    width: 375px;
+}
+
+.animate {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: animtext 7s steps(80, end); 
+    transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+@keyframes animtext { 
+    from {
+        width: 0;
+       transition: all 4s ease-in-out;
+    } 
+}
+
+li.bg-light {
+    display:inline-block;
+}
+
+/* About Me Page */
+.photo2 {
     position: relative;
     right: 300px;
-    top: -440px;
+    top: -550px;
     height: 550px;
 }
 
@@ -58,21 +73,25 @@ a {
     width: 350px;
 }
 
-.contact-title {
-    position: relative;
-    top: 250px;
+/* Contact Page */
+.contact {
+    display: inline-block;
 }
 
 .contact-info {
     position: relative;
-    left: 150px;
     top: 150px;
+    height: 170px;
+    border-left-style: dashed;
+    border-spacing: 100px;
+    padding-left: 50px;
+    margin-left: 50px;
 }
 
+/* Experience Page */
 .experience {
-    position: relative;
-    top: 60px;
-    left: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

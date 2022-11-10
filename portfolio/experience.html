@@ -1,58 +1,120 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Your Personal CSS BELOW this Line -->
         <title>My Experience</title>
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-        <div class="center experience grid">
-            <title class="row1">My Experiences</title>
-            <h3 class="row2">Projects</h3>
+        <div class="grid">
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar_top row1">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Max</a>
 
-            <div class="row3">
-                <h4><a href="https://github.com/maxtalwar/nft-analytics" target="_blank">NFT Analytics Tool</a></h4>
-                <ul>
-                    <li>Built a tool to generate and plot analytics data about NFT marketplaces</li>
-                    <li>Technologies Used: Python, SQL, REST APIs</li>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
-            </div>
-            <div class="row4">
-                <h4><a href="https://github.com/electric-capital/token-emissions" target="_blank">Cryptocurrency Investor Unlock Schedule</a></h4>
-                <ul>
-                    <li>Generates a token unlock dashboard for various cryptocurrency projects</li>
-                    <li>Gives users a sense for when projects will see price crashes due to investors selling tokens</li>
-                </ul>
-            </div>
-            <div class="row5">
-                <h4><a href="https://github.com/maxtalwar/BitPredictor" target="_blank">ML-based Bitcoin Trading Bot</a></h4>
-                <ul>
-                    <li>Uses Random Foresting Algorithms to forecast bitcoin price movements based on technical indicators</li>
-                    <li>Technologies Used: Turicreate, REST and POST APIs, Google Cloud Servers, SQL</li>
-                </ul>
+                </div>
+            </nav>
+            
+            <!--Jumbotron and Cards-->
+            <div class="experience">
+                <div class="jumbotron row2">
+                    <h1>My Projects and Experiences</h1>
+                </div>
+    
+                <div class="experience card-deck row3 col-lg-10 col-md-12 col-sm-12 col-12">
+                    <div class="card col-sm-12 col-12">
+                        <img src="nft_analytics_project_photo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">NFT Analytics Tool</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Built a tool to generate and plot analytics data about NFT marketplaces</li>
+                                    <li>Technologies Used: Python, SQL, REST APIs</li>
+                                </ul>
+                            </p>
+                            <a href="https://github.com/maxtalwar/nft-analytics" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+            
+                    <div class="card col-sm-12 col-12">
+                        <img src="data_client.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cryptocurrency Unlock Schedule</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Generates a token unlock dashboard for various cryptocurrency projects</li>
+                                    <li>Gives users a sense for when projects will see price crashes due to investors selling tokens</li>
+                                </ul>
+                            </p>
+                            <a href="https://github.com/electric-capital/token-emissions" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+            
+                    <div class="card col-sm-12 col-12">
+                        <img src="bitpredictor.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ML-based Bitcoin Trading Bot</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Uses Random Foresting Algorithms to forecast bitcoin price movements based on technical indicators</li>
+                                    <li>Technologies Used: Turicreate, REST and POST APIs, Google Cloud Servers, SQL</li>
+                                </ul>
+                            </p>
+                            <a href="https://github.com/maxtalwar/BitPredictor" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <hr>
-            <h3 class="row6">Coding Experiences</h3>
+            <!--Experiences-->
+            <div class="experience">
+                <hr class="row4">
+
+                <h3 class="row6">Coding Experiences</h3>
                 <div class="row7">
                     <h4>Software Development Intern at <a href="https://www.electriccapital.com/" target="_blank">Electric Capital</a></h4>
                     <ul>
+                        <li class="bg-light text-primary">Jun-Aug 2021, 2022</li>
                         <li>Built the Aforementioned NFT Analytics Tool and Token Unlock Schedule</li>
                         <li>Build spreadsheets to model the profitability of mining/staking various cryptocurrencies</li>
+                        <li>Built tools to generate insights on the NFT market</li>
                     </ul>
                 </div>
                 <div class="row8">
                     <h4><a href="https://www.uscyberpatriot.org/" target="_blank">AFA Cyberpatriot</a> Team Leader (National Semifinals Ranking)</h4>
                     <ul>
+                        <li class="bg-light text-primary">Sep-Nov 2019</li>
                         <li>Founded and led the Cybersecurity Team at my school to rank in the National Semifinals in the AFA Cyberpatriot Competition</li>
                         <li>Topics Worked On: Network Administration, System Security</li>
                     </ul>
                 </div>
+            </div>
         </div>
-        
-        <div class="top">
-            <a class="link1" href="index.html">Homepage</a>
-            <a class="link2" href="aboutme.html">About Me</a>
-            <a class="link3" href="contact.html">Contact</a>
-        </div>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
